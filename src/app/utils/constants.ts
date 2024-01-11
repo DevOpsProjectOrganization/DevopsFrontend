@@ -1,0 +1,1 @@
+export const ADS_API_URL = "http://localhost:50218/"
