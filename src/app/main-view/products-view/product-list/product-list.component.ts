@@ -9,7 +9,8 @@ import { CommonModule } from "@angular/common";
     templateUrl: 'product-list.component.html',
     selector:'app-product-list',
     styleUrls: ['product-list.component.css'],
-    imports: [ProductComponent, CommonModule]
+    imports: [ProductComponent, CommonModule],
+    providers: [ProductsApi]
     
 })
 export class ProductListComponent

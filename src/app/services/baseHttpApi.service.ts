@@ -1,5 +1,4 @@
 import { HttpClient } from "@angular/common/http";
-import { Inject } from "@angular/core";
 import { Observable } from "rxjs";
 
 
@@ -13,6 +12,8 @@ export class BaseHttpApi<T>
 
     getElements() : Observable<T[]>
     {
+        console.log("Url:");
+        console.log(this.baseUrl);
         return this.httpClient.get<T[]>(this.baseUrl);
     }
 

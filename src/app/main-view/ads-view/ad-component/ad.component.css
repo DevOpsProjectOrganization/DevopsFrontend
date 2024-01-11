@@ -1,0 +1,16 @@
+.ad-container
+{
+    border:1px solid gray;
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+}
+
+.ad-image
+{
+    width: auto;
+    height: auto;
+}
