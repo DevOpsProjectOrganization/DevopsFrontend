@@ -6,7 +6,6 @@ import { Ad } from "../../../models/ad.model";
     templateUrl: 'ad.component.html',
     selector:'app-ad',
     styleUrls: ['ad.component.css']
-    
 })
 export class AdComponent
 {

@@ -13,21 +13,15 @@ import { AdsApi } from "../../../services/adsApi.service";
     providers: [AdsApi]
     
 })
-export class AdListComponent implements OnInit
+export class AdListComponent
 {
     ads : Ad[];
 
     constructor(private adsApi : AdsApi)
     {
-        console.log("SIR??")
         adsApi.getElements().subscribe((elements : Ad[])=>
         {
-            console.log("MF gimme those elements:");
-            console.log(elements);
             this.ads = elements;
         })
-    }
-    ngOnInit(): void {
-       console.log("Da ti eba tupata maika");
     }
 }
