@@ -5,6 +5,8 @@ import {} from 'jasmine';
 
 //Tests are dummies written by chat gpt, they are added for the sake of adding a pipeline step.
 describe('BaseHttpApiService', () => {
+
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
   let service: BaseHttpApi<any>;
   let httpTestingController: HttpTestingController;
 
