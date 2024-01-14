@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { AdComponent } from "../ad-component/ad.component";
 import { Ad } from "../../../models/ad.model";
