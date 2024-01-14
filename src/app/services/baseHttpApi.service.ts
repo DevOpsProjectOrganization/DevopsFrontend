@@ -4,16 +4,18 @@ import { Observable } from "rxjs";
 
 export class BaseHttpApi<T>
 {
-    
-    constructor(private httpClient : HttpClient, private baseUrl : string)
+    public get baseUrl() : string
+    {
+        return this._baseUrl;
+    }
+
+    constructor(private httpClient : HttpClient, private _baseUrl : string)
     {
 
     }
 
     getElements() : Observable<T[]>
     {
-        console.log("Url:");
-        console.log(this.baseUrl);
         return this.httpClient.get<T[]>(this.baseUrl);
     }
 
