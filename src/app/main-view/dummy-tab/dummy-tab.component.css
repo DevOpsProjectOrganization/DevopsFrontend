@@ -1,0 +1,38 @@
+.example-form {
+    min-width: 10em;
+    max-width: 12em;
+    width: 100%;
+    height: 60%;
+  }
+  
+.welcome-text
+{
+  font-size: 3em;
+  margin-right: 10em;
+  color: white;
+}
+  .example-full-width {
+    width: 100%;
+  }
+
+  .class-form
+  {
+    display: inline;
+  }
+
+  .welcome-tab
+  {
+    display:flex;
+    direction: ltr;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(63,81,181);
+  }
+
+  .row
+  {
+    margin: 1em;
+    display:flex;
+    direction: ltr;
+    flex-direction: row;
+  }

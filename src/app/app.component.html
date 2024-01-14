@@ -1,10 +1,17 @@
-<div>
-  <div>
-    <h2>PRODUCTS:</h2>
-    <app-product-list></app-product-list>
+<div class="flex-container">
+  <div class="header">
+    <app-dummy-tab></app-dummy-tab>
   </div>
-  <div>
-    <h6>Ads:</h6>
-    <app-ad-list></app-ad-list>
+  <div class="content-container">
+    <div class="products">
+      <h2>Browse Products</h2>
+      <app-product-list></app-product-list>
+    </div>
+    <div class="ads">
+      <h6>Totally not suspicious and very legitimate ads</h6>
+      <div class="ads-list-container">
+        <app-ad-list></app-ad-list>
+      </div>
+    </div>
   </div>
 </div>

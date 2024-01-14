@@ -1,5 +1,15 @@
-<div class="ad-container">
-    <h3>{{model.name}}</h3>
-    <img class="ad-image" [src]="model.image" alt="An image of the advertised product">
-    <p>{{model.description}}</p>
-</div>
+<mat-card class="ad-card">
+    <mat-card-header>
+      <mat-card-title>{{model.name}}</mat-card-title>
+      <mat-card-subtitle>Ad</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <img mat-card-image class="ad-image" src={{model.image}} alt="Photo of the ad">
+      <p class="model-description">
+        {{model.description}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions class="buttons-container">
+      <button mat-button>Find out more...</button>
+    </mat-card-actions>
+</mat-card>
