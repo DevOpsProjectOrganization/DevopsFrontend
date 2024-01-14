@@ -1,12 +1,8 @@
-#Stage 1
-FROM node:18-alpine AS build
-WORKDIR /usr/src
+FROM node:18-alpine
+WORKDIR /app
+RUN npm install -g @angular/cli@16
 COPY package.json package-lock.json ./
-RUN npm install
+RUN npm ci
 COPY . .
-RUN npm run build
-
-
-#Stage 2
-FROM nginx:alpine
-COPY --from=build usr/src/dist/dev-ops-frontend/* /usr/share/nginx/html
+EXPOSE 4200
+CMD ["ng", "serve", "--host", "0.0.0.0"]

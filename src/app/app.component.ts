@@ -9,7 +9,7 @@ import { ProductListComponent } from './main-view/products-view/product-list/pro
   standalone: true,
   imports: [CommonModule, RouterOutlet, AdListComponent, ProductListComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'DevOpsFrontend';
