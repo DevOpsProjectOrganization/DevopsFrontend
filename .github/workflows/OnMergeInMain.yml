@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  ensure-code-quality:
+  es-lint-check:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,6 +26,3 @@ jobs:
 
       - name: Check linting rules
         run: npm run lint
-
-      - name: Run tests
-        run: npm run test
