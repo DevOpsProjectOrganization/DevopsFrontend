@@ -1,1 +1,1 @@
-A simlpe frontend using Angular giworking with two microservices
+A simlpe frontend using Angular giworking with two microservices.
