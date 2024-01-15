@@ -4,12 +4,8 @@ import { Observable } from "rxjs";
 
 export class BaseHttpApi<T>
 {
-    public get baseUrl() : string
-    {
-        return this._baseUrl;
-    }
-
-    constructor(private httpClient : HttpClient, private _baseUrl : string)
+    
+    constructor(private httpClient : HttpClient, private baseUrl : string)
     {
 
     }

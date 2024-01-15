@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "DevOpsFrontend": {
+    "Devopsfrontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/dev-ops-frontend",
+            "outputPath": "dist/devopsfrontend",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -58,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "DevOpsFrontend:build:production"
+              "buildTarget": "Devopsfrontend:build:production"
             },
             "development": {
-              "browserTarget": "DevOpsFrontend:build:development"
+              "buildTarget": "Devopsfrontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "DevOpsFrontend:build"
+            "buildTarget": "Devopsfrontend:build"
           }
         },
         "test": {
@@ -92,8 +92,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }
