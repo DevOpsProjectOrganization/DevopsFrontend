@@ -1,0 +1,26 @@
+.product-card
+{
+    border:1px solid gray;
+    display: flex;
+    flex-direction: column;
+    width: 9em;
+    padding: 0.1em;
+    margin: 0.5em;
+    height: auto;
+}
+
+mat-card img{
+  object-fit: cover;
+  width: 60%;
+  height: 60%;
+}
+
+mat-card-actions
+{
+  margin-top: 1.5em;
+}
+
+mat-card mat-card-content
+{
+  font-size: 0.6em;
+}
