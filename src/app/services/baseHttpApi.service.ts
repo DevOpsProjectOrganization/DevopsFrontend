@@ -12,8 +12,6 @@ export class BaseHttpApi<T>
 
     getElements() : Observable<T[]>
     {
-        console.log("Url:");
-        console.log(this.baseUrl);
         return this.httpClient.get<T[]>(this.baseUrl);
     }
 
