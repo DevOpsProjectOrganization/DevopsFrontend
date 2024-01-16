@@ -1,6 +1,6 @@
 services:
   angularfrontend:
-    image: saltntoona/devopsfrontend
+    image: saltytoona/devopsfrontend
     build:
       context: .
       dockerfile: ./Dockerfile
